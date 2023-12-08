@@ -10,7 +10,6 @@
                 width: 100%;
                 height: 100%;
                 grid-template-columns: 1fr 4fr 1fr;
-                grid-template-rows: 4fr 100px;
                 gap: 30px;
                 border-radius: 15px;
             }
@@ -60,6 +59,7 @@
                 border-radius: 15px;
                 overflow: scroll;
                 scrollbar-width: none;
+                -ms-overflow-style: none;
             }
 
             .bebidas{
@@ -67,15 +67,6 @@
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: rgb(99, 61, 0);
                 border-radius: 15px 15px 0 0;
-            }
-
-            .rodape{
-                background-color: rgb(255, 214, 109);
-                grid-column-start: 1;
-                grid-column-end: 4;
-                border-radius: 15px;
-                color: rgb(99, 61, 0);
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
 
             .texto{
@@ -113,7 +104,7 @@
                 margin-top: 5px;
             }
 
-            li :hover{
+            li:hover{
                 font-weight: bolder;
             }
 
@@ -156,7 +147,7 @@
                 <h4>Linha Fit</h4>
                 <hr>
                 <ul>
-                    <li><a href="bolo_banana_fit.html">Bolo de Banana Fit</a></li>
+                    <li><a href="#bolo-banana-fit">Bolo de Banana Fit</a></li>
                 </ul>
                 </div>
             </div>
@@ -186,80 +177,128 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt praesentium rem, tenetur, aliquam, eligendi corporis at porro eaque aliquid ullam veritatis deleniti odit repellendus mollitia soluta. Cum hic ut necessitatibus.</p>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet laudantium ducimus minima, vitae doloremque nulla illum voluptates itaque consectetur! Est optio suscipit temporibus nostrum inventore recusandae nesciunt qui veniam quaerat.</p>
                     </div>
-                <hr>
+                    <hr>
 
-                <div class="hidden">
-                <h1>Nossos Produtos</h1>
-                <h2>Pães</h2>
-                </div>
-                <div class="pao-caseiro hidden">
-                <h3 id="pao_caseiro">Pão Caseiro Tradicional</h3>     
-                <img src="Pão caseiro.png" alt="Pão Caseiro">
-                
-                <p>Cada mordida revela a maciez que só o nosso pão caseiro pode oferecer, proporcionando uma experiência que transcende o tempo. Nossa massa é amassada com carinho, assada com a mesma dedicação que as avós dedicavam a cada refeição, resultando em uma textura que lembra abraços afetuosos e manhãs acolhedoras.
-                    Os aromas que envolvem nossos pães trazem você de volta à cozinha da avó, onde o cheiro irresistível de pão fresco invadia cada canto da casa. Cada fatia é uma celebração à tradição, um tributo ao passado.
-                </p>
-                </div>
+                    <div class="hidden">
+                        <h1>Nossos Produtos</h1>
+                        <h2>Pães</h2>
+                    </div>
 
-                <div class="pao-sovado hidden">
-                <h3 id="pao_sovado">Pão Sovado</h3>
-                    <img src="Pão Sovado.png" alt="Pão Sovado">
-                <p>Bem-vindo à autenticidade robusta do nosso pão caseiro sovado, onde a tradição encontra a maestria artesanal. Cada pedaço é uma obra-prima de paciência e fermentação lenta, trazendo à tona o sabor inconfundível do pão sovado com esmero.
-                    Nossa massa, nutrida ao longo de horas de fermentação natural, culmina em uma textura densa e elástica que faz jus à arte ancestral da panificação. Cada mordida revela camadas sutis de sabor, um equilíbrio perfeito entre a acidez característica do fermento natural e a riqueza robusta de uma crosta dourada.</p>
-                </div>
-                <div class="hidden">
-                <h3 id="caseirinho">Caseirinho</h3>
-                    <img src="Caseirinho.png" alt="Caseirinho">
-                <p>Todo o sabor e maciez do pão caseiro em formato mini, perfeito para pessoas que moram sozinhas, mas que não abrem
-                    mão do sabor e maciez de um pão caseiro pela manhã, ou no café da tarde
-                </p>
-               </div>
+                    <div class="pao-caseiro hidden">
+                        <h3 id="pao_caseiro">Pão Caseiro Tradicional</h3>     
+                        <img src="Pão caseiro.png" alt="Pão Caseiro">
+                        <p>Cada mordida revela a maciez que só o nosso pão caseiro pode oferecer, proporcionando uma experiência que transcende o tempo. Nossa massa é amassada com carinho, assada com a mesma dedicação que as avós dedicavam a cada refeição, resultando em uma textura que lembra abraços afetuosos e manhãs acolhedoras.
+                        Os aromas que envolvem nossos pães trazem você de volta à cozinha da avó, onde o cheiro irresistível de pão fresco invadia cada canto da casa. Cada fatia é uma celebração à tradição, um tributo ao passado.
+                        </p>
+                    </div>
 
-               <div class="hidden">
-                <h3 id="caseirinho_sovado">Caseirinho Sovado</h3>
-                    <img src="Caseirinho_sovado.png" alt="Caseirinho Sovado">
-                <p>Todo o sabor e maciez do nosso pão caseiro sovado em formato mini, perfeito para pessoas que moram sozinhas, mas que não abrem
-                    mão do sabor e maciez de um pão caseiro pela manhã, ou no café da tarde</p>
-                </div>
+                    <div class="pao-sovado hidden">
+                        <h3 id="pao_sovado">Pão Sovado</h3>
+                        <img src="Pão Sovado.png" alt="Pão Sovado">
+                        <p>Bem-vindo à autenticidade robusta do nosso pão caseiro sovado, onde a tradição encontra a maestria artesanal. Cada pedaço é uma obra-prima de paciência e fermentação lenta, trazendo à tona o sabor inconfundível do pão sovado com esmero.
+                        Nossa massa, nutrida ao longo de horas de fermentação natural, culmina em uma textura densa e elástica que faz jus à arte ancestral da panificação. Cada mordida revela camadas sutis de sabor, um equilíbrio perfeito entre a acidez característica do fermento natural e a riqueza robusta de uma crosta dourada.</p>
+                    </div>
 
-                <hr>
+                    <div class="hidden">
+                        <h3 id="caseirinho">Caseirinho</h3>
+                        <img src="Caseirinho.png" alt="Caseirinho">
+                        <p>Todo o sabor e maciez do pão caseiro em formato mini, perfeito para pessoas que moram sozinhas, mas que não abrem
+                        mão do sabor e maciez de um pão caseiro pela manhã, ou no café da tarde
+                        </p>
+                    </div>
 
-                <div class="hidden">
-                    <h2>Bolos</h2>
-                </div>
-                
-                <div class="hidden">
-                    <h3 id="bolo-fuba">Bolo de Fubá</h3>
-                    <img src="Bolo-Fubá.png">
-                    <p>
-                    Abrace a tradição e mergulhe em uma experiência única com o nosso Bolo de Fubá feito com 
-                    ingredientes selecionados e muito carinho. Cada fatia é uma viagem ao passado, relembrando as receitas caseiras que aquecem o coração.
-                    </p>
-                </div>
+                    <div class="hidden">
+                        <h3 id="caseirinho_sovado">Caseirinho Sovado</h3>
+                        <img src="Caseirinho_sovado.png" alt="Caseirinho Sovado">
+                        <p>Todo o sabor e maciez do nosso pão caseiro sovado em formato mini, perfeito para pessoas que moram sozinhas, mas que não abrem
+                        mão do sabor e maciez de um pão caseiro pela manhã, ou no café da tarde</p>
+                    </div>
 
-                <div class="hidden">
-                    <h3 id="bolo-fuba-cremoso">Bolo de Fubá Cremoso</h3>
-                    <img src="Bolo de fuba cremoso.png">
-                    <p>Bolo de fubá com recheio cremoso, perfeito para aquele cafézinho da tarde preguiçoso
+                    <hr>
+
+                    <div class="hidden">
+                        <h2>Bolos</h2>
+                    </div>
+                    
+                    <div class="hidden">
+                        <h3 id="bolo-fuba">Bolo de Fubá</h3>
+                        <img src="Bolo-Fubá.png">
+                        <p>
+                        Abrace a tradição e mergulhe em uma experiência única com o nosso Bolo de Fubá feito com 
+                        ingredientes selecionados e muito carinho. Cada fatia é uma viagem ao passado, relembrando as receitas caseiras que aquecem o coração.
+                        </p>
+                    </div>
+
+                    <div class="hidden">
+                        <h3 id="bolo-fuba-cremoso">Bolo de Fubá Cremoso</h3>
+                        <img src="Bolo de fuba cremoso.png">
+                        <p>Bolo de fubá com recheio cremoso, perfeito para aquele cafézinho da tarde preguiçoso
                         junto com uma boa xícara de café. À cada mordida sinta a cremosidade de nossa massa e aprecie o sabor único de nossa receita
-                    </p>
-                </div>
+                        </p>
+                    </div>
 
-                <div class="hidden">
-                    <h3 id="bolo-cenoura">Bolo de Cenoura</h3>
-                    <img src="Bolo de cenoura.png">
-                    <p>O tradicional bolo de cenoura com cobertura de chocolate meio amargo do Sig. Farina, prove do sabor e da 
-                        textura deste delicioso bolo, feito com a tradicional receita Sig. Farina, passada de geração em geração até 
-                        chegar à sua mesa 
-                    </p>
-                </div>
+                    <div class="hidden">
+                        <h3 id="bolo-cenoura">Bolo de Cenoura</h3>
+                        <img src="Bolo de cenoura.png">
+                        <p>O tradicional bolo de cenoura com cobertura de chocolate meio amargo do Sig. Farina, prove do sabor e da 
+                            textura deste delicioso bolo, feito com a tradicional receita Sig. Farina, passada de geração em geração até 
+                            chegar à sua mesa 
+                        </p>
+                    </div>
 
-                <div class="hidden">
-                    <h3 id="bolo-banana">Bolo de Banana</h3>
-                    <img src="Bolo de banana.png">
-                    <p>Apresentamos o nosso incrível Bolo de Banana, Combine a doçura natural da banana com a maciez de nossa massa, 
-                        uma verdadeira celebração de sabores que vai conquistar o seu paladar.</p>
-                </div>
+                    <div class="hidden">
+                        <h3 id="bolo-banana">Bolo de Banana</h3>
+                        <img src="Bolo de banana.png">
+                        <p>Apresentamos o nosso incrível Bolo de Banana, Combine a doçura natural da banana com a maciez de nossa massa, 
+                            uma verdadeira celebração de sabores que vai conquistar o seu paladar.</p>
+                    </div>
+
+                    <div class="hidden">
+                        <h2>Linha Fit</h2>
+                    </div>
+
+                    <div class="hidden">
+                        <h3 id="bolo-banana-fit">Bolo de Banana Fit</h3>
+                        <img src="Bolo de banana fit.png">
+                        <p>Bolo de banana feito especialmente para aqueles que estão buscando um estilo de vida mais saudável, feito somente
+                            com banana, aveia e farinha, este bolo é adoçado somente com o açúcar natural da banana, garantindo assim um Bolo
+                            leve e saudável para você poder se deliciar sem sair da dieta
+                        </p>
+                    </div>
+                    
+                    <div class="hidden">
+                        <h3 id="pao-integral">Pão Caseiro Integral</h3>
+                        <img src="Pão Caseiro integral.png">
+                        <p>Pão feito 100% com farinha integral, perfeito para dietas mais restritas, ou para quem quer focar ainda mais 
+                            na saúde
+                        </p>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="hidden">
+                        <h2>Bebidas</h2>
+                    </div>
+
+                    <div class="hidden">
+                        <h3 id="coca-cola">Coca-Cola</h3>
+                        <img src="Coca Cola lata.png">
+                    </div>
+
+                    <div class="hidden">
+                        <h3 id="itubaina">Itubaína Retro</h3>
+                        <img src="Itubaina.png">
+                    </div>
+
+                    <div class="hidden">
+                        <h3 id="guarana-antarctica">Guaraná Antarctica</h3>
+                        <img src="Guarana antarctica.png">
+                    </div>
+
+                    <div class="hidden">
+                        <h3 id="fanta">Fanta</h3>
+                        <img src="Fanta.png">
+                    </div>
                 </div>
             </div>
             <!-- Fim da aba main -->
@@ -269,20 +308,18 @@
                 <div class="titulo">
                     <h3>Bebidas</h3>
                 </div>
-                <h4>Refrigerantes</h4>
-                <hr>
-                <ul>
-                    <li>Coca Cola</li>
-                    <li>Itubaína Retro</li>
-                    <li>Guaraná Antartica</li>
-                    <li>Fanta</li>
-                </ul>
-                <hr>
-                <h4></h4>
+
+                <div>
+                    <h4>Refrigerantes</h4>
+                    <hr>
+                    <ul>
+                        <li><a href="#coca-cola">Coca Cola</a></li>
+                        <li><a href="#itubaina">Itubaína Retro</a></li>
+                        <li><a href="#guarana-antarctica">Guaraná Antartica</a></li>
+                        <li><a href="#fanta">Fanta</a></li>
+                    </ul>
+                </div>
             </div>
-            <!--Fim da aba de bebidas-->
-            <div class="rodape">Rodapé</div>
-        </div>
     </body>
 
     <script src="scripts.js"></script>
