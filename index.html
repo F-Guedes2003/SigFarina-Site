@@ -9,7 +9,7 @@
                 display: grid;
                 width: 100%;
                 height: 100%;
-                grid-template-columns: 1fr 4fr 1fr;
+                grid-template-columns: 1fr 5fr;
                 gap: 30px;
                 border-radius: 15px;
             }
@@ -18,9 +18,9 @@
                 background-color: rgb(255, 214, 109);
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: rgb(99, 61, 0);
-                border-radius: 15px;         
-                position: sticky;       
-                top: 0;
+                border-radius: 15px;                
+                overflow: scroll;
+                scrollbar-width: none;
             }
 
             .menus h4{
@@ -37,6 +37,8 @@
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: rgb(255, 214, 109);
                 border-radius: 15px 15px 0 0;
+                position: sticky;
+                top: 0;
             }
 
             .titulo-main{
@@ -120,7 +122,7 @@
             <!-- conteúdo do menu de alimentos -->
             <div class="menus">
                 <div class="titulo">
-                    <h3>Alimentos</h3>
+                    <h3>Produtos</h3>
                 </div>
                 <div class="texto-menus">
             <!-- Pães -->
@@ -142,13 +144,24 @@
                     <li><a href="#bolo-cenoura">Bolo de Cenoura</a></li>
                     <li><a href="#bolo-banana">Bolo De Banana</a></li>
                 </ul>
-
+                <!--Linha Fit-->
                 <hr>
                 <h4>Linha Fit</h4>
                 <hr>
                 <ul>
                     <li><a href="#bolo-banana-fit">Bolo de Banana Fit</a></li>
                 </ul>
+                <!--Bebidas-->
+                <hr>
+                <h4>Refrigerantes</h4>
+                <hr>
+                <ul>
+                    <li><a href="#coca-cola">Coca Cola</a></li>
+                    <li><a href="#itubaina">Itubaína Retro</a></li>
+                    <li><a href="#guarana-antarctica">Guaraná Antartica</a></li>
+                    <li><a href="#fanta">Fanta</a></li>
+                </ul>
+                
                 </div>
             </div>
             <!-- fim do conteúdo de alimentos-->
@@ -304,22 +317,6 @@
             <!-- Fim da aba main -->
 
             <!--Começo da aba de bebidas-->
-            <div class="menus">
-                <div class="titulo">
-                    <h3>Bebidas</h3>
-                </div>
-
-                <div>
-                    <h4>Refrigerantes</h4>
-                    <hr>
-                    <ul>
-                        <li><a href="#coca-cola">Coca Cola</a></li>
-                        <li><a href="#itubaina">Itubaína Retro</a></li>
-                        <li><a href="#guarana-antarctica">Guaraná Antartica</a></li>
-                        <li><a href="#fanta">Fanta</a></li>
-                    </ul>
-                </div>
-            </div>
     </body>
 
     <script src="scripts.js"></script>
